@@ -1,7 +1,7 @@
 require 'item'
 
 RSpec.describe(Item) do
-  subject { Item.new("apple", 50) }
+  subject { item = Item.new("apple", 50) }
   describe '#name' do
     context 'with parameter' do
       it { expect(subject.name).to eq("apple") }
